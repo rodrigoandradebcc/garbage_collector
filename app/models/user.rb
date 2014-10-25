@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
+  validates_presence_of :name, message: "Campo Obrigatório"
+
   def get_name
   	self.name.upcase
   end
@@ -14,7 +16,7 @@ class User < ActiveRecord::Base
   		user.uid = auth.uid
   		unless auth.provider == 'twitter'
   			user.email = auth.info.email 
-  			user.skip_confirmation!
+        user.name = auth.info.name
   		end
   	end
   end

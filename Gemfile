@@ -36,6 +36,9 @@ gem "font-awesome-sass", '~> 4.1.0'
 gem 'better_errors'
 gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form', branch: 'master'
 gem 'devise'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
 
 group :production do
   gem 'pg',             '0.17.1'

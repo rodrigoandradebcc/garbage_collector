@@ -26,4 +26,7 @@ GarbageCollector::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  ENV["FACEBOOK_APP_ID"] = "931583713535963"
+  ENV["FACEBOOK_APP_SECRET"] = "e704a47c7d208a847c2ff7da206c52e8"
 end
