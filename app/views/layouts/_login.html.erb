@@ -1,0 +1,45 @@
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= icon('caret-square-o-down', 'Login') %></a>
+  <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+    <li>
+      <div class="row">
+        <div class="col-md-12">
+          <%= simple_form_for(:user, url: session_path(:user)) do |f| %>
+          <%= f.input :email, label: false, placeholder: "Email" %>
+          <%= f.input :password, autocomplete: "off", label: false, placeholder: "Password" %>
+          <%= f.submit "Entrar", class: 'btn btn-success col-md-12' %>
+          <% end %>
+        </div>
+      </div><!-- end row -->
+    </li>
+    <li>
+      <div class="row" style="padding-top: 10px;">
+        <div class="col-md-12">
+          <%= link_to 'Cadastre-se', new_user_registration_path, class: 'btn btn-default col-md-12' %>
+        </div>
+      </div>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-small text-muted">Ou faça login com:</p>
+          <div class="btn-group btn-group-lg btn-group-justified">
+            <%= link_to root_path, class: "btn btn-primary" do %>
+            <%= icon('facebook-square') %>
+            <% end %>  
+            <%= link_to root_path, class: "btn btn-info" do %>
+            <%= icon('twitter-square') %>
+            <% end %>
+            <%= link_to root_path, class: "btn btn-danger" do %>
+            <%= icon('google-plus-square') %>
+            <% end %>
+            <%= link_to root_path, class: "btn btn-primary" do %>
+            <%= icon('linkedin-square') %>
+            <% end %>
+          </div>
+        </div>
+      </div><!-- end row -->
+    </li>
+  </ul>
+</li>
