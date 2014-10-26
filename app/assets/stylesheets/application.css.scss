@@ -15,37 +15,37 @@
  */
 
  .font-brand {
- 	font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', cursive;
  }
 
  .jumbotron {
     text-align: center;
- }
+  }
 
  .section-one {
   padding: 40px;
   margin-bottom: 30px;
-}
+ }
 
  /* Sticky footer styles
  -------------------------------------------------- */
  html {
    position: relative;
    min-height: 100%;
-}
-body {
+ }
+ body {
    /* Margin bottom by footer height */
    margin-bottom: 60px;
    padding-top: 30px;
-}
-.footer {
+ }
+ .footer {
    position: absolute;
    bottom: 0;
    width: 100%;
    /* Set the fixed height of the footer here */
    height: 60px;
    background-color: #93C54B;
-}
+ }
 
 
  /* Custom page CSS
@@ -54,30 +54,29 @@ body {
 
  body > .container {
    padding: 20px 15px 0;
-}
-.container .foot {
+ }
+ .container .foot {
    margin: 20px 0;
    color: #fff;
-}
+ }
 
-.footer > .container {
+ .footer > .container {
    padding-right: 15px;
    padding-left: 15px;
-}
+ }
 
-code {
+ code {
    font-size: 80%;
-}
+ }
 
-.footer a {
- color: #fff;
- margin-left: 10px;
- font-size: 25px;
-}
+ .footer a {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 25px;
+ }
 
-.footer a:hover {
- color: #4F7814;
-}
+ .footer a:hover {
+  color: #4F7814;
+ }
 
-
-
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
