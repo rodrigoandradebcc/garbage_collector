@@ -41,7 +41,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
 
 group :production do
-  gem 'pg'
+  gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
 end
 
