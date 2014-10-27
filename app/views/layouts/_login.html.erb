@@ -28,13 +28,13 @@
             <%= link_to user_omniauth_authorize_path(:facebook), class: "btn btn-primary" do %>
               <%= icon('facebook-square') %>
             <% end %>  
-            <%= link_to root_path, class: "btn btn-info" do %>
+            <%= link_to user_omniauth_authorize_path(:twitter), class: "btn btn-info" do %>
               <%= icon('twitter-square') %>
             <% end %>
             <%= link_to root_path, class: "btn btn-danger" do %>
               <%= icon('google-plus-square') %>
             <% end %>
-            <%= link_to root_path, class: "btn btn-primary" do %>
+            <%= link_to user_omniauth_authorize_path(:linkedin), class: "btn btn-primary" do %>
               <%= icon('linkedin-square') %>
             <% end %>
           </div>
