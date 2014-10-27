@@ -27,6 +27,11 @@ GarbageCollector::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  ENV["TWITTER_CONSUMER_KEY"] = "DVgCc3D1WTE6XGsuz7P78K4aC"
+  ENV["TWITTER_CONSUMER_SECRET"] = "bMsG1gBuLlEjogWpmxNr7PZ9RfsM3jIrYafY3my9LZ2SnX0OB9"
   ENV["FACEBOOK_APP_ID"] = "931583713535963"
   ENV["FACEBOOK_APP_SECRET"] = "e704a47c7d208a847c2ff7da206c52e8"
+  ENV["LINKEDIN_APP_ID"] = "77xxvtctznt90u"
+  ENV["LINKEDIN_APP_SECRET"] = "4USfOyPdCOkT1xPx"
+  
 end
