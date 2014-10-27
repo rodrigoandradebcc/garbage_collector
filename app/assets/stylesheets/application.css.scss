@@ -15,16 +15,16 @@
  */
 
  .font-brand {
-  font-family: 'Permanent Marker', cursive;
+ 	font-family: 'Permanent Marker', cursive;
  }
 
  .jumbotron {
-    text-align: center;
-  }
+		text-align: center;
+	}
 
  .section-one {
-  padding: 40px;
-  margin-bottom: 30px;
+ 	padding: 40px;
+ 	margin-bottom: 30px;
  }
 
  /* Sticky footer styles
@@ -70,11 +70,13 @@
  }
 
  .footer a {
-  color: #fff;
-  margin-left: 10px;
-  font-size: 25px;
+ 	color: #fff;
+ 	margin-left: 10px;
+ 	font-size: 25px;
  }
 
  .footer a:hover {
-  color: #4F7814;
+ 	color: #4F7814;
  }
+
+ @import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
