@@ -3872,6 +3872,7 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
     margin-bottom: 30px;
     color: inherit;
     background-color: #ebf1f4;
+    background-image: linear-gradient(to bottom, #980021 130%); 
 }
 .jumbotron h1, .jumbotron .h1 {
     color: inherit
