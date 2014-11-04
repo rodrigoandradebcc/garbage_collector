@@ -22,6 +22,9 @@
         <li class="<%= 'active' if params[:controller] == 'about' %>">
         <%= link_to icon('info', 'Nosso Trabalho'), root_path %>
         </li>
+        <li class="<%= 'active' if params[:controller] == 'endorsees' %>">
+          <a href="/contacts/new">Contact</a>
+        </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">

@@ -5450,3 +5450,25 @@ input:focus, .form-control:focus {
 .panel-default .panel-heading, .panel-default .panel-title, .panel-default .panel-footer {
     color: #98978b
 }
+
+
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
+}
+.corfundocontato{
+    background: #ebf4df !important;
+    color: #000000 !important;
+}
+
+#fontepreta{
+    color: #000000 !important;
+}
+
+#margem{
+    padding-bottom: 85px;    
+}
