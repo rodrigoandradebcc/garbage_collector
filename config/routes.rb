@@ -1,5 +1,7 @@
 GarbageCollector::Application.routes.draw do
   
+  resources :abouts
+
   resources :contacts
 
   devise_for :users,  controllers: { registrations: "users/registrations",  

@@ -5469,6 +5469,20 @@ font-size: 24px;
     color: #000000 !important;
 }
 
+/*meus css*/
+
 #margem{
     padding-bottom: 85px;    
+}
+
+#justificandotexto{
+    text-align: justify;
+    
+}
+
+.linha{
+    background-color: #93c54b;
+    height: 4px;
+    padding-top: -35px;
+    margin-top: 0px;
 }
