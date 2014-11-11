@@ -1,0 +1,32 @@
+<div class="container">
+  <br>
+  <div>
+    <% @abouts.each do |about| %>
+
+    <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+      <h1>Nosso trabalho</h1>
+      <hr class="linha">
+      <div align="center"><%= image_tag("logolixo.jpg", size:'430x180')%></div>
+      <br>
+      <hr class="linha"> 
+      <p id="justificandotexto"><%= about.body %></p>
+      <% if user_signed_in? %>
+      <%= link_to 'Show', about %>
+      <%= link_to 'Edit', edit_about_path(about) %>
+      <%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    </div>
+
+    
+    <% end %>
+  </div>
+
+
+
+  <br>
+
+  <% if @abouts.empty? %>
+  <%= link_to 'New About', new_about_path %>
+  <% end %>
+
+</div>

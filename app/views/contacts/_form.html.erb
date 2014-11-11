@@ -1,0 +1,15 @@
+
+<%= simple_form_for(@contact) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :full_name, label: false, placeholder: "NOME COMPLETO" %>
+    <%= f.input :email, label: false, placeholder: "E-MAIL" %>
+    <%= f.input :subject, label: false, placeholder: "ASSUNTO" %>
+    <%= f.input :body, label: false, placeholder: "MENSAGEM" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "col-md-12" %>
+  </div>
+<% end %>

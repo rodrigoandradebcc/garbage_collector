@@ -9,7 +9,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <div class="navbar-brand font-brand"><%= icon('recycle', 'Recol') %></div>
+      <div style="margin-top: 10px; margin-right: 5px;"><%= image_tag "logo.png", size: '130x50', class: "img-responsive" %></div>
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,7 +21,10 @@
           <%= link_to icon('home', 'Início'), root_path %>
         </li>
         <li class="<%= 'active' if params[:controller] == 'about' %>">
-        <%= link_to icon('info', 'Nosso Trabalho'), root_path %>
+        <%= link_to icon('info', 'Nosso Trabalho'), abouts_path %>
+        </li>
+        <li class="<%= 'active' if params[:controller] == 'endorsees' %>">
+          <a href="/contacts/new">Contato</a>
         </li>
       </ul>
 

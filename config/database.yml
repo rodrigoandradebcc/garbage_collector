@@ -1,7 +1,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: garbage_collector_development
+  database: recol_development
   pool: 5
   username: root
   password: root
@@ -13,7 +13,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: garbage_collector_test
+  database: recol_test
   pool: 5
   username: root
   password: root
@@ -22,7 +22,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: garbage_collector_production
+  database: recol_production
   pool: 5
   username: fabsoft
   password: fabsoft

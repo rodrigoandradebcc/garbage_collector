@@ -1,5 +1,9 @@
 GarbageCollector::Application.routes.draw do
   
+  resources :abouts
+
+  resources :contacts
+
   devise_for :users,  controllers: { registrations: "users/registrations",  
   	omniauth_callbacks: "users/omniauth_callbacks" }
   
