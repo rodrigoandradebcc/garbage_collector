@@ -25,16 +25,16 @@
         <div class="col-md-12">
           <p class="text-small text-muted">Ou faça login com:</p>
           <div class="btn-group btn-group-lg btn-group-justified">
-            <%= link_to user_omniauth_authorize_path(:facebook), class: "btn btn-primary" do %>
+            <%= link_to user_omniauth_authorize_path(:facebook), class: "btn btn-primary btn-group-xs" do %>
               <%= icon('facebook-square') %>
             <% end %>  
-            <%= link_to user_omniauth_authorize_path(:twitter), class: "btn btn-info" do %>
+            <%= link_to user_omniauth_authorize_path(:twitter), class: "btn btn-info btn-group-xs" do %>
               <%= icon('twitter-square') %>
             <% end %>
-            <%= link_to root_path, class: "btn btn-danger" do %>
+            <%= link_to root_path, class: "btn btn-danger btn-group-xs" do %>
               <%= icon('google-plus-square') %>
             <% end %>
-            <%= link_to user_omniauth_authorize_path(:linkedin), class: "btn btn-primary" do %>
+            <%= link_to user_omniauth_authorize_path(:linkedin), class: "btn btn-primary btn-group-xs" do %>
               <%= icon('linkedin-square') %>
             <% end %>
           </div>
