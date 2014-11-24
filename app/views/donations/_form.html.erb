@@ -1,0 +1,23 @@
+<%= simple_form_for(@donation) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Doação</h3>
+      </div>
+      
+      <div class="panel-body">
+
+        <div class="form-inputs">
+          <%= f.association :collection_point, label: "Ponto de Coleta" %>
+          <%= f.association :bonu, label: "Dispositivo" %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.submit "Doar", class: "btn btn-info" %>
+        </div>
+
+      </div>
+
+    </div>
+<% end %>

@@ -6,8 +6,11 @@ class User < ActiveRecord::Base
 
   validates_presence_of :name, message: "Campo Obrigatório"
 
+  scope :rank, -> { order(points: :desc) }
+
   belongs_to :role
   has_many :collection_points
+  has_many :donations
 
   def get_name
   	self.name.upcase

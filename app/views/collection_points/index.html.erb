@@ -1,35 +1,43 @@
-<h1>Listing collection_points</h1>
+<div class="container">
+  <div class="page-header">
+    <h1>Listando Pontos de Coleta</h1>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Address</th>
-      <th>Name</th>
-      <th>Google address</th>
-      <th>Complement</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Pontos</h3>
+    </div>
+    <div class="panel-body">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Address</th>
+            <th>Name</th>
+            <th>Google address</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
 
-  <tbody>
-    <% @collection_points.each do |collection_point| %>
-      <tr>
-        <td><%= collection_point.user %></td>
-        <td><%= collection_point.address %></td>
-        <td><%= collection_point.name %></td>
-        <td><%= collection_point.google_address %></td>
-        <td><%= collection_point.complement %></td>
-        <td><%= link_to 'Show', collection_point %></td>
-        <td><%= link_to 'Edit', edit_collection_point_path(collection_point) %></td>
-        <td><%= link_to 'Destroy', collection_point, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        <tbody>
+          <% @collection_points.each do |collection_point| %>
+          <tr>
+           <td><%= collection_point.address %></td>
+           <td><%= collection_point.name %></td>
+           <td><%= collection_point.google_address %></td>
+           <td><%= link_to 'Exibir', collection_point %></td>
+           <td><%= link_to 'Editar', edit_collection_point_path(collection_point) %></td>
+           <td><%= link_to 'Deletar', collection_point, method: :delete, data: { confirm: 'Você tem certeza disso?' } %></td>
+         </tr>
+         <% end %>
+       </tbody>
+     </table>      
+   </div>
+ </div>
 
-<br>
+ <%= link_to 'Novo Ponto de Coleta', new_collection_point_path, class: "btn btn-info" %>
 
-<%= link_to 'New Collection point', new_collection_point_path %>
+ <br>
+</div>
+

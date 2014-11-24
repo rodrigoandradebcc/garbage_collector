@@ -1,29 +1,35 @@
-<p id="notice"><%= notice %></p>
+<div class="container" style="margin-top: 50px">
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h2 class="panel-title">Ponto</h2>
+    </div>
+    <div class="panel-body">
+      <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @collection_point.user %>
-</p>
+      <p>
+        <strong>Nome:</strong>
+        <%= @collection_point.name %>
+      </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @collection_point.address %>
-</p>
+      <p>
+        <strong>Address:</strong>
+        <%= @collection_point.address %>
+      </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @collection_point.name %>
-</p>
 
-<p>
-  <strong>Google address:</strong>
-  <%= @collection_point.google_address %>
-</p>
+      <p>
+        <strong>Google address:</strong>
+        <%= @collection_point.google_address %>
+      </p>
 
-<p>
-  <strong>Complement:</strong>
-  <%= @collection_point.complement %>
-</p>
+      <p>
+        <strong>Complement:</strong>
+        <%= @collection_point.complement %>
+      </p>
+    </div>
+  </div>
 
-<%= link_to 'Edit', edit_collection_point_path(@collection_point) %> |
-<%= link_to 'Back', collection_points_path %>
+  <%= link_to 'Editar', edit_collection_point_path(@collection_point) %> |
+  <%= link_to 'Voltar', collection_points_path %>
+</div>
+  

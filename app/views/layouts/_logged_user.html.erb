@@ -14,6 +14,10 @@
       <li>
           <%= link_to icon('recycle', 'Novo Ponto de Coleta'), new_collection_point_path %>
       </li>
+    <% elsif current_user.role?("Donator") %>
+      <li>
+          <%= link_to icon('recycle', 'Nova Doação'), new_donation_path %>
+      </li>
     <% end %> 
     <li>
       <%= link_to icon('times', 'Logout'), destroy_user_session_path,

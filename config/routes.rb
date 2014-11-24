@@ -1,5 +1,7 @@
 GarbageCollector::Application.routes.draw do
   
+  resources :donations
+
   resources :collection_points
 
   devise_for :admin_users, ActiveAdmin::Devise.config

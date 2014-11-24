@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  collection_point_id: 
+  bonu_id: 
+  pending: MyString
+  points: 1
+
+two:
+  user_id: 
+  collection_point_id: 
+  bonu_id: 
+  pending: MyString
+  points: 1
