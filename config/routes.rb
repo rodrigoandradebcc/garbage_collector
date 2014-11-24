@@ -1,5 +1,9 @@
 GarbageCollector::Application.routes.draw do
   
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  
+  ActiveAdmin.routes(self)
+
   resources :bonus, only: [:index]
 
   resources :abouts, only: [:index]

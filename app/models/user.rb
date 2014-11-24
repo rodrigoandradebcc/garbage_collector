@@ -8,12 +8,6 @@ class User < ActiveRecord::Base
 
   belongs_to :role
 
-  after_create :donator_register
-
-  def donator_register
-    self.role = Role.find_by(name: "Donator")
-  end
-
   def get_name
   	self.name.upcase
   end
