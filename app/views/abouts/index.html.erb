@@ -9,12 +9,8 @@
       <div align="center"><%= image_tag("logolixo.jpg", size:'430x180')%></div>
       <br>
       <hr class="linha"> 
-      <p id="justificandotexto"><%= about.body %></p>
-      <% if user_signed_in? %>
-      <%= link_to 'Show', about %>
-      <%= link_to 'Edit', edit_about_path(about) %>
-      <%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %>
-      <% end %>
+      <div id="justificandotexto"><%= raw about.body %></div>
+      
     </div>
 
     
