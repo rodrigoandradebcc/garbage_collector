@@ -39,6 +39,8 @@ gem 'devise'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
+gem 'cancan'
+gem 'activeadmin', github: 'activeadmin'
 
 group :production do
   gem 'pg',             '0.17.1'

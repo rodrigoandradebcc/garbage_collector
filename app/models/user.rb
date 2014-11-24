@@ -6,8 +6,20 @@ class User < ActiveRecord::Base
 
   validates_presence_of :name, message: "Campo Obrigatório"
 
+  belongs_to :role
+
+  after_create :donator_register
+
+  def donator_register
+    self.role = Role.find_by(name: "Donator")
+  end
+
   def get_name
   	self.name.upcase
+  end
+
+  def role?(r)
+    self.role.name == r
   end
 
   def self.from_omniauth(auth)
