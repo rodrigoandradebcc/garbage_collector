@@ -7,6 +7,14 @@
     <li>
       <%= link_to icon('gamepad', 'Meus Pontos'), root_path %>
     </li>
+    <% if current_user.role?("Collector") %>
+      <li>
+        <%= link_to icon('recycle', 'Meus Pontos de Coleta'), collection_points_path %>
+      </li>
+      <li>
+          <%= link_to icon('recycle', 'Novo Ponto de Coleta'), new_collection_point_path %>
+      </li>
+    <% end %> 
     <li>
       <%= link_to icon('times', 'Logout'), destroy_user_session_path,
         method: :delete %>

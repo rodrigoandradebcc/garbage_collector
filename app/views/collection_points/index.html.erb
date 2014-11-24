@@ -1,0 +1,35 @@
+<h1>Listing collection_points</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Address</th>
+      <th>Name</th>
+      <th>Google address</th>
+      <th>Complement</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @collection_points.each do |collection_point| %>
+      <tr>
+        <td><%= collection_point.user %></td>
+        <td><%= collection_point.address %></td>
+        <td><%= collection_point.name %></td>
+        <td><%= collection_point.google_address %></td>
+        <td><%= collection_point.complement %></td>
+        <td><%= link_to 'Show', collection_point %></td>
+        <td><%= link_to 'Edit', edit_collection_point_path(collection_point) %></td>
+        <td><%= link_to 'Destroy', collection_point, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Collection point', new_collection_point_path %>

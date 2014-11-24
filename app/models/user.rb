@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates_presence_of :name, message: "Campo Obrigatório"
 
   belongs_to :role
+  has_many :collection_points
 
   def get_name
   	self.name.upcase
@@ -14,6 +15,10 @@ class User < ActiveRecord::Base
 
   def role?(r)
     self.role.name == r
+  end
+
+  def donate(device)
+    self.points += device[:points]
   end
 
   def self.from_omniauth(auth)

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141124162730) do
+ActiveRecord::Schema.define(version: 20141124172402) do
 
   create_table "abouts", force: true do |t|
     t.text     "body"
@@ -58,6 +58,18 @@ ActiveRecord::Schema.define(version: 20141124162730) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "collection_points", force: true do |t|
+    t.integer  "user_id"
+    t.string   "address"
+    t.string   "name"
+    t.string   "google_address"
+    t.string   "complement"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "collection_points", ["user_id"], name: "index_collection_points_on_user_id", using: :btree
 
   create_table "contacts", force: true do |t|
     t.string   "full_name"

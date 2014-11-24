@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @collection_point.user %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @collection_point.address %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @collection_point.name %>
+</p>
+
+<p>
+  <strong>Google address:</strong>
+  <%= @collection_point.google_address %>
+</p>
+
+<p>
+  <strong>Complement:</strong>
+  <%= @collection_point.complement %>
+</p>
+
+<%= link_to 'Edit', edit_collection_point_path(@collection_point) %> |
+<%= link_to 'Back', collection_points_path %>
